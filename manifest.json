@@ -1,1 +1,22 @@
-
+{
+  "short_name": "Alumnis",
+  "name": "Site des anciens",
+  "icons": [
+    {
+      "src": "",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true"
+}
