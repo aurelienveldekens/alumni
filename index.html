@@ -1,145 +1,219 @@
-
- -<div class="modal-header">
- -  			  
- - <!-- -->
- -</div>
- -	  <div class="modal-body">					
- -			<form class="form-horizontal" id="regForm" role="form" method="post" action=""> 
- -				<div class="form-group">
- -					<label  class="col-sm-2 control-label" for="mail">Email</label>					  
- -					<div class="col-sm-10">
- -						<input type="email" class="form-control" id="mail" placeholder="Email" name="mail" autofocus/>						
- -					</div>
- -				</div>
- -				 <div class="form-group">
- -					<label class="col-sm-2 control-label"
- -						  for="password" >Password</label>
- -				<div class="col-sm-10">
- -						<input type="password" class="form-control" id="passwordReg" placeholder="Password" name="password"/>
- -							
- -				</div>					
- -				</div>
- -			    <div class="form-group">
- -					<div class="col-sm-2">
- -						<label class="radio-inline"><input type="radio" name="gender" value="h">Homme</label>
- -						<label class="radio-inline"><input type="radio" name="gender" value="f">Femme</label>
- -					</div>                           
- -				</div>
- -			<div class="modal-footer">
- -				<div class="form-group">                 
- -							 
- -						<button type="submit" name="register" class="btn btn-warning"> Register <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span></button>                          					
- -						<button type="button" name="closeBtn" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></button>
- -						
- -			
- -				</div>
- -				</form>
- -				<div id = "failReg" class = "alert alert-warning collapse">
- -					<a href = "#" class = "close" data-dismiss = "alert">&times;</a>
- -					<center><strong>Warning!</strong> Ce compte existe déjà!</center>
- -				</div>
- -				<div id = "sexNull" class = "alert alert-warning collapse">
- -					<a href = "#" class = "close" data-dismiss = "alert">&times;</a>
- -					<center><strong>Warning!</strong>Vous avez oubliez votre gendre </center>
- -				</div>
- -				<div id = "empty" class = "alert alert-warning collapse">
- -					<a href = "#" class = "close" data-dismiss = "alert">&times;</a>
- -					<center><strong>Warning!</strong> Veuillez remplir tous les champs!</center>
- -				</div>
+ <!DOCTYPE HTML>
+ <!--
+ 	Prologue by HTML5 UP
+ 	html5up.net | @ajlkn
+ 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+ -->
+ <html>
+ 	<head>
+ 		<title>Site des Anciens Etudiants de la HELB</title>
+ 		<meta charset="utf-8" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+ 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+ 		<link rel="stylesheet" href="assets/css/main.css" />
+ 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+ 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+ 	</head>
+ 	<body>
+ 
+ 		<!-- Header -->
+ 			<div id="header">
+ 
+ 				<div class="top">
+ 
+ 					<!-- Logo -->
+ 						<div id="logo">
+ 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+ 							<h1 id="title">NOM Prenom</h1>
+ 							<p>SECTION</p>
+ 						</div>
+ 
+ 					<!-- Nav -->
+ 						<nav id="nav">
+ 							<!--
+ 
+ 								Prologue's nav expects links in one of two formats:
+ 
+ 								1. Hash link (scrolls to a different section within the page)
+ 
+ 								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+ 
+ 								2. Standard link (sends the user to another page/site)
+ 
+ 								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+ 
+ 							-->
+ 							<ul>
+ 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">TEST</span></a></li>
+ 								<li><a href="#Actualite" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Actualite</span></a></li>
+ 								<li><a href="#Formations" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Formations</span></a></li>
+ 								<li><a href="#Activite" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Activite</span></a></li>
+ 								<li><a href="#Annuaire" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Annuaire</span></a></li>
+ 								<li><a href="#Contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+ 								<li><a href="#Gallerie" id="gallerie-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Gallerie</span></a></li>
+ 							</ul>
+ 						</nav>
+ 
+ 				</div>
+ 
+ 				<div class="bottom">
+ 
+ 					<!-- Social Icons -->
+ 						<ul class="icons">
+ 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+ 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+ 							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+ 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+ 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+ 						</ul>
+ 
+ 				</div>
+ 
+ 			</div>
+ 
+ 		<!-- Main -->
+ 			<div id="main">
+ 
+ 				<!-- Intro -->
+ 					<section id="top" class="one dark cover">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2 class="alt">Bienvenue sur le site des <strong>Anciens Etudiants</strong> de la <strong>H.E.L.B.</strong><br />
+ 								</h2>
+ 								<p>Section Informatique de Gestion.</p>
+ 							</header>
+ 
+ 							<footer>
+ 								<a href="#" class="button scrolly">Se Connecter</a>
+ 							</footer>
+ 
+ 						</div>
+ 					</section>
+ 
+ 				<!-- Actualite -->
+ 					<section id="Actualite" class="two">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2>Actualite</h2>
+ 							</header>
+  
+  						</div>
+  					</section>
+ -				<?xml version="1.0" encoding="ISO-8859-1" ?>
+ -				<rss version="2.0">
+ -				<channel>
+ - 				<title>Alumni</title>
+ -  				<link>http://ancienshelb.tk</link>
+ -  				<description>Description de votre site</description>
+ -  				<language>fr</language>
+ -  				<item>
+ -  				<title>Accueil</title>
+ -  				<link>http://ancienshelb.tk/index</link>
+ -  				<description>Description du contenue de la page</description>
+ -  				</item>
+ -   				</channel>
+ -  				</rss>
  -				
- -			</div>
- -		  </div> 
- -	 
- -		 
- -		 <script>
- -		$('.modal').on('shown.bs.modal', function() {
- -		
- -		$(this).find('[autofocus]').focus();
- -		});
- -		$("#regForm").submit(function(event){
- -			console.log("submit");
- -			event.preventDefault();
- -			submitFormReg();
- -		});
- -		
- -		function submitFormReg(){
- -			console.log("submitFormReg");
- -			var mail = $("#mail").val();
- -			var password = $("#passwordReg").val();
- -			var gender = $("input:radio[name=gender]:checked").val();
- -			var register = $("register").val();
- -			
- -			
- - 
- -			$.ajax({
- -				type: "POST",
- -				url: "Traitements/traitementReg.php",
- -				data: "mail=" + mail + "&password=" + password + "&gender=" + gender + "&register=jj",
- -				success: function(text){
- -					console.log(text);
- -					if (text == "success"){
- -						formSuccess();
- -						
- -												
- -							
- -						
- -						
- -						
- -						
- -					}
- -					if(text=="fail")
- -					{
- -						
- -						formFail();
- -					}
- -					if(text=="sexe")
- -					{
- -						
- -						formSexe();
- -					}
- -					if(text=="empty")
- -					{
- -						formEmpty();
- -					}
- -				},
- -				error: function(text)
- -				{
- -					if(text=="pas register")
- -					{
- -						console.log('formfail');
- -						
- -					}
- -					
- -				}
- -			});
- -}
- -function formEmpty(){
- -	$("#empty").show();
- -}
- -	
- -function formSuccess(){
- -	$('#register').modal('hide');
- -	
- -	
- -	
- -	
- -}
- -function formFail(){
- -	console.log("formFail");
- -	$("#failReg").show();
- -	
- -    
- -	
- -}
- -function formSexe(){
- -	console.log("sexNull");
- -	$("#sexNull").show();
- -	
- -    
- -	
- -}
- -
- -
- -		</script>
- -			
- -		  
+  				<!-- Formations -->
+  					<section id="Formations" class="two">
+  						<div class="container">
+ 
+ 							<header>
+ 								<h2>Formations</h2>
+ 							</header>
+ 
+ 							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+ 							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+ 							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+ 							fusce hendrerit lacus ridiculus.</p>
+ 
+ 						</div>
+ 					</section>
+ 					
+ 					<!-- Activite -->
+ 					<section id="Activite" class="three">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2>Activite</h2>
+ 							</header>
+ 
+ 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+ 
+ 							<p>	Des voyages aux expositions, la <strong>HELB</strong> organise toutes sortes d'activités à caractère culturel, sportif ou festif...
+ 								Elle informe également sur les activités mises sur pied par les diverses associations qui lui sont proches (associations post-facultaires, cercles facultaires, ...).
+ 								Vous avez une idée ? N'hésitez pas à la proposer : toute initiative est la bienvenue !</p>
+ 
+ 						</div>
+ 					</section>
+ 				<!-- Annuaire -->
+ 					<section id="Annuaire" class="three">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2>Annuaire</h2>
+ 							</header>
+ 
+ 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+ 
+ 							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+ 							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+ 							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+ 							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+ 							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+ 							ornare iaculis.</p>
+ 
+ 						</div>
+ 					</section>
+ 
+ 				<!-- Contact -->
+ 					<section id="Contact" class="four">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2>Contact</h2>
+ 							</header>
+ 
+ 							<p>Pour plus de renseignements, posez votre question via ce formulaire.</p>
+ 
+ 							<form method="post" action="#">
+ 								<div class="row">
+ 									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Nom" /></div>
+ 									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+ 									<div class="12u$">
+ 										<textarea name="message" placeholder="Message"></textarea>
+ 									</div>
+ 									<div class="12u$">
+ 										<input type="submit" value="Envoyer" />
+ 									</div>
+ 								</div>
+ 							</form>
+ 
+ 						</div>
+ 					</section>
+ 
+ 			</div>
+ 
+ 		<!-- Footer -->
+ 			<div id="footer">
+ 
+ 				<!-- Copyright -->
+ 					<ul class="copyright">
+ 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+ 					</ul>
+ 
+ 			</div>
+ 
+ 		<!-- Scripts -->
+ 			<script src="assets/js/jquery.min.js"></script>
+ 			<script src="assets/js/jquery.scrolly.min.js"></script>
+ 			<script src="assets/js/jquery.scrollzer.min.js"></script>
+ 			<script src="assets/js/skel.min.js"></script>
+ 			<script src="assets/js/util.js"></script>
+ 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+ 			<script src="assets/js/main.js"></script>
+ 
+ 	</body>
+ </html>
