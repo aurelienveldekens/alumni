@@ -82,7 +82,7 @@
 							</header>
 
 							<footer>
-								<a href="#" class="button scrolly">Se Connecterrrrrr</a>
+								<a href="#" class="button scrolly">Se Connecter</a>
 							</footer>
 
 						</div>
