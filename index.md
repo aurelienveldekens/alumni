@@ -77,7 +77,7 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Bienvenue sur le site des <strong>ANCIENS Etudiants</strong> de la <strong>H.E.L.B.</strong><br />
+								<h2 class="alt">Bienvenue sur le site des <strong>Anciens Etudiants</strong> de la <strong>H.E.L.B.</strong><br />
 								</h2>
 							</header>
 
