@@ -6,6 +6,8 @@
  -->
  <html>
  	<head>
+ 		<link rel="icon" type="images/png" src="images/alumni.jpg">
+ 		<link rel="manifest" href="/manifest.json">
  		<title>Site des Anciens Etudiants de la HELB</title>
  		<meta charset="utf-8" />
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +17,16 @@
  		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
  	</head>
  	<body>
- 
+ 		<div id="fb-root"></div>
+ 		<script>
+ 		(function(d, s, id) {
+   		var js, fjs = d.getElementsByTagName(s)[0];
+   		if (d.getElementById(id)) return;
+   		js = d.createElement(s); js.id = id;
+   		js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+   		fjs.parentNode.insertBefore(js, fjs);
+ 		}(document, 'script', 'facebook-jssdk'));
+ 		</script>
  		<!-- Header -->
  			<div id="header">
  
@@ -44,13 +55,14 @@
  
  							-->
  							<ul>
- 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">TEST</span></a></li>
+ 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Accueil</span></a></li>
  								<li><a href="#Actualite" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Actualite</span></a></li>
  								<li><a href="#Formations" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Formations</span></a></li>
  								<li><a href="#Activite" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Activite</span></a></li>
+ 								<li><a href="#Calendrier" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Calendrier</span></a></li>
  								<li><a href="#Annuaire" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Annuaire</span></a></li>
  								<li><a href="#Contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
- 								<li><a href="#Gallerie" id="gallerie-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Gallerie</span></a></li>
+ 								<li><a href="#Galerie" id="gallerie-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Gallerie</span></a></li>
  							</ul>
  						</nav>
  
@@ -98,32 +110,22 @@
  							<header>
  								<h2>Actualite</h2>
  							</header>
-  
-  						</div>
-  					</section>
- -				<?xml version="1.0" encoding="ISO-8859-1" ?>
- -				<rss version="2.0">
- -				<channel>
- - 				<title>Alumni</title>
- -  				<link>http://ancienshelb.tk</link>
- -  				<description>Description de votre site</description>
- -  				<language>fr</language>
- -  				<item>
- -  				<title>Accueil</title>
- -  				<link>http://ancienshelb.tk/index</link>
- -  				<description>Description du contenue de la page</description>
- -  				</item>
- -   				</channel>
- -  				</rss>
- -				
-  				<!-- Formations -->
-  					<section id="Formations" class="two">
-  						<div class="container">
+ 							<div class="fb-page" data-href="https://www.facebook.com/HauteEcoleLibreDeBruxellesIlyaPrigogine/?ref=br_rs" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+ 								<blockquote cite="https://www.facebook.com/HauteEcoleLibreDeBruxellesIlyaPrigogine/?ref=br_rs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HauteEcoleLibreDeBruxellesIlyaPrigogine/?ref=br_rs">HELB
+ 									</a>
+ 								</blockquote>
+ 							</div>
+ 
+ 						</div>
+ 					</section>
+ 				<!-- Formations -->
+ 					<section id="Formations" class="two">
+ 						<div class="container">
  
  							<header>
  								<h2>Formations</h2>
  							</header>
- 
+ 							<h3>Crea-HELB</h3>
  							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
  							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
  							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
@@ -145,6 +147,17 @@
  							<p>	Des voyages aux expositions, la <strong>HELB</strong> organise toutes sortes d'activités à caractère culturel, sportif ou festif...
  								Elle informe également sur les activités mises sur pied par les diverses associations qui lui sont proches (associations post-facultaires, cercles facultaires, ...).
  								Vous avez une idée ? N'hésitez pas à la proposer : toute initiative est la bienvenue !</p>
+ 
+ 						</div>
+ 					</section>
+ 				<!-- Calendrier -->
+ 					<section id="Calendrier" class="two">
+ 						<div class="container">
+ 
+ 							<header>
+ 								<h2>Calendrier</h2>
+ 							</header>
+ 							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;hl=en&amp;bgcolor=%23cccccc&amp;src=alumnishelbig%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FBrussels" style="border:solid 1px #777" width="450" height="500" frameborder="0" scrolling="no"></iframe>
  
  						</div>
  					</section>
@@ -187,12 +200,13 @@
  									</div>
  									<div class="12u$">
  										<input type="submit" value="Envoyer" />
- 									</div>
- 								</div>
- 							</form>
- 
- 						</div>
- 					</section>
+  									</div>
+  								</div>
+  							</form>
+ +							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsGeu_eRnLIcuII53zqlQNT-6p1W6SkBisznhi1xObuLkgPA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+  
+  						</div>
+  					</section>
  
  			</div>
  
